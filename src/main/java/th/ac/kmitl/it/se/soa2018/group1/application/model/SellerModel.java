@@ -1,8 +1,10 @@
 package th.ac.kmitl.it.se.soa2018.group1.application.model;
 
 public class SellerModel {
+
     private String name;
-    private String specifiedTaxRegistration;
+    private String specifiedTaxRegistrationID;
+    private TradeAddress tradeAddress;
 
     public String getName() {
         return name;
@@ -12,11 +14,19 @@ public class SellerModel {
         this.name = name;
     }
 
-    public String getSpecifiedTaxRegistration() {
-        return specifiedTaxRegistration;
+    public String getSpecifiedTaxRegistrationID() {
+        return specifiedTaxRegistrationID;
     }
 
-    public void setSpecifiedTaxRegistration(String specifiedTaxRegistration) {
-        this.specifiedTaxRegistration = specifiedTaxRegistration;
+    public void setSpecifiedTaxRegistrationID(String specifiedTaxRegistrationID) {
+        this.specifiedTaxRegistrationID = specifiedTaxRegistrationID;
+    }
+
+    public TradeAddress getTradeAddress() {
+        return tradeAddress;
+    }
+
+    public void setTradeAddress(TradeAddress tradeAddress) {
+        this.tradeAddress = tradeAddress;
     }
 }
