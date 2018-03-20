@@ -4,7 +4,7 @@ public class SellerModel {
 
     private String name;
     private String specifiedTaxRegistrationID;
-    private TradeAddress tradeAddress;
+    private TradeAddressModel tradeAddressModel;
 
     public String getName() {
         return name;
@@ -22,11 +22,11 @@ public class SellerModel {
         this.specifiedTaxRegistrationID = specifiedTaxRegistrationID;
     }
 
-    public TradeAddress getTradeAddress() {
-        return tradeAddress;
+    public TradeAddressModel getTradeAddressModel() {
+        return tradeAddressModel;
     }
 
-    public void setTradeAddress(TradeAddress tradeAddress) {
-        this.tradeAddress = tradeAddress;
+    public void setTradeAddressModel(TradeAddressModel tradeAddressModel) {
+        this.tradeAddressModel = tradeAddressModel;
     }
 }
