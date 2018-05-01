@@ -14,11 +14,12 @@ public class ContactDetailTest {
     @Test
     public void checkInputCorrectData() {
 
-        ContactDetail contactDetail = new ContactDetail();
-        contactDetail.setPersonName(this.personName);
-        contactDetail.setDepartmentName(this.departmentName);
-        contactDetail.setEmail(this.email);
-        contactDetail.setPhoneNumber(this.phoneNumber);
+        ContactDetail contactDetail = ContactDetail.builder()
+                .personName(this.personName)
+                .departmentName(this.departmentName)
+                .email(this.email)
+                .phoneNumber(this.phoneNumber)
+                .build();
 
         assertEquals(this.personName, contactDetail.getPersonName());
         assertEquals(this.departmentName, contactDetail.getDepartmentName());
