@@ -21,18 +21,19 @@ public class AddressTest {
     @Test
     public void checkInputCorrectData() {
 
-        Address address = new Address();
-        address.setPostCode(this.postCode);
-        address.setBuildingName(this.buildingName);
-        address.setSoi(this.soi);
-        address.setVillage(this.village);
-        address.setMoo(this.moo);
-        address.setStreetName(this.streetName);
-        address.setCityName(this.cityName);
-        address.setCitySubDivisionName(this.citySubDivisionName);
-        address.setCountryId(this.countryId);
-        address.setCountrySubDivisionId(this.countrySubDivisionId);
-        address.setBuildingNumber(this.buildingNumber);
+        Address address = Address.builder()
+                .postCode(this.postCode)
+                .buildingName(this.buildingName)
+                .soi(this.soi)
+                .village(this.village)
+                .moo(this.moo)
+                .streetName(this.streetName)
+                .cityName(this.cityName)
+                .citySubDivisionName(this.citySubDivisionName)
+                .countryId(this.countryId)
+                .countrySubDivisionId(this.countrySubDivisionId)
+                .buildingNumber(this.buildingNumber)
+                .build();
 
         assertEquals(this.postCode, address.getPostCode());
         assertEquals(this.buildingName, address.getBuildingName());
