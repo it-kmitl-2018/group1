@@ -6,8 +6,8 @@ import static org.junit.Assert.assertEquals;
 
 public class SellerTest {
 
-    private final String sellerID = "";
-    private final String sellerGlobalID = "";
+    private final String sellerID = "comp1123456";
+    private final String sellerGlobalID = "TH00000564857495";
     private final String sellerName = "บริษัท ร่วมสมยัธุรกรรมอิเล็กทรอนิกส์ จำกัด";
     private final String taxRegistrationId = "057552600909900000";
     private final ContactDetail sellerDetail = ContactDetail.builder().build();
