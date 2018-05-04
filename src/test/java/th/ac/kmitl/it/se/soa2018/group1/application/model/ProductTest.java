@@ -17,8 +17,7 @@ public class ProductTest {
     private IncludedNote includedNote = new IncludedNote();
 
     @Test
-    public void checkInputCorrectData(){
-
+    public void checkInputCorrectData() {
         Product product = Product.builder()
                 .ID(this.ID)
                 .globalID(this.globalID)
@@ -30,7 +29,6 @@ public class ProductTest {
                 .countryID(this.countryID)
                 .includedNote(this.includedNote)
                 .build();
-
         assertEquals(this.ID, product.getID());
         assertEquals(this.globalID, product.getGlobalID());
         assertEquals(this.name, product.getName());
@@ -39,5 +37,6 @@ public class ProductTest {
         assertEquals(this.productCategory, product.getProductCategory());
         assertEquals(this.countryID, product.getCountryID());
         assertEquals(this.includedNote, product.getIncludedNote());
+    }
 
 }
