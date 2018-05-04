@@ -6,29 +6,29 @@ import static org.junit.Assert.assertEquals;
 
 public class BuyerTest {
 
-    private final String buyerID = "ABCDEFGHIJKLMNOPQRST123456789012345";
-    private final String buyerGlobalID = "ABCDEFGHIJKLMNOPQRST123456789012345";
-    private final String buyerName = "ธำรำ ยืนข ำ";
+    private final String ID = "ABCDEFGHIJKLMNOPQRST123456789012345";
+    private final String globalID = "ABCDEFGHIJKLMNOPQRST123456789012345";
+    private final String name = "ธำรำ ยืนข ำ";
     private final String taxRegistrationID = "1104599001271";
-    private final ContactDetail buyerContact = ContactDetail.builder().build();
-    private final Address buyerAddress = Address.builder().build();
+    private final ContactDetail contact = ContactDetail.builder().build();
+    private final Address address = Address.builder().build();
 
     @Test
     public void checkInputCorrectData(){
         Buyer buyer = Buyer.builder()
-                .buyerID(this.buyerID)
-                .buyerGlobalID(this.buyerGlobalID)
-                .buyerName(this.buyerName)
+                .ID(this.ID)
+                .globalID(this.globalID)
+                .name(this.name)
                 .taxRegistrationID(this.taxRegistrationID)
-                .buyerContact(this.buyerContact)
-                .buyerAddress(this.buyerAddress)
+                .contact(this.contact)
+                .address(this.address)
                 .build();
-        assertEquals(this.buyerID, buyer.getBuyerID());
-        assertEquals(this.buyerGlobalID, buyer.getBuyerGlobalID());
-        assertEquals(this.buyerName, buyer.getBuyerName());
+        assertEquals(this.ID, buyer.getID());
+        assertEquals(this.globalID, buyer.getGlobalID());
+        assertEquals(this.name, buyer.getName());
         assertEquals(this.taxRegistrationID, buyer.getTaxRegistrationID());
-        assertEquals(this.buyerContact, buyer.getBuyerContact());
-        assertEquals(this.buyerAddress, buyer.getBuyerAddress());
+        assertEquals(this.contact, buyer.getContact());
+        assertEquals(this.address, buyer.getAddress());
     }
 
 }
