@@ -10,8 +10,8 @@ public class BuyerTest {
     private final String buyerGlobalID = "ABCDEFGHIJKLMNOPQRST123456789012345";
     private final String buyerName = "ธำรำ ยืนข ำ";
     private final String taxRegistrationID = "1104599001271";
-    private final ContactDetail buyerContact = new ContactDetail();
-    private final Address buyerAddress = new Address();
+    private final ContactDetail buyerContact = ContactDetail.builder().build();
+    private final Address buyerAddress = Address.builder().build();
 
     @Test
     public void checkInputCorrectData(){
