@@ -12,7 +12,7 @@ public class ProductTest {
     private String name = "ดินสอเขียนคิ้ว";
     private String description = "ดินสอเนื้อครีม สีน้ำตาลอ่อน";
     private Timestamp expireDateTime = new Timestamp(System.currentTimeMillis());
-    private ProductCategory productCategory = new ProductCategory();
+    private ProductCategory productCategory = ProductCategory.builder().build();
     private String countryID = "TH";
     private IncludedNote includedNote = new IncludedNote();
 
