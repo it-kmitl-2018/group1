@@ -6,11 +6,11 @@ import lombok.Data;
 @Builder
 public @Data class Seller {
 
-    private String sellerID;
-    private String sellerGlobalID;
-    private String sellerName;
+    private String id;
+    private String globalID;
+    private String name;
     private String taxRegistrationID;
-    private ContactDetail sellerContact;
-    private Address sellerAddress;
+    private ContactDetail contact;
+    private Address address;
 
 }
