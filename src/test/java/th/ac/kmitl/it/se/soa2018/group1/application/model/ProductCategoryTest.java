@@ -10,16 +10,13 @@ public class ProductCategoryTest {
     private final String name = "กระดาษถ่ายเอกสารหรือพิมพ์งานทั่วไป";
 
     @Test
-    public void checkInputCorrectData(){
-
+    public void checkInputCorrectData() {
         ProductCategory productCategory = ProductCategory.builder()
                 .code(this.code)
                 .name(this.name)
                 .build();
-
         assertEquals(this.code, productCategory.getCode());
         assertEquals(this.name, productCategory.getName());
-
     }
 
 }
