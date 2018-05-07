@@ -16,14 +16,14 @@ public class BuyerTest {
     @Test
     public void checkInputCorrectData(){
         Buyer buyer = Buyer.builder()
-                .ID(this.id)
+                .id(this.id)
                 .globalID(this.globalID)
                 .name(this.name)
                 .taxRegistrationID(this.taxRegistrationID)
                 .contact(this.contact)
                 .address(this.address)
                 .build();
-        assertEquals(this.id, buyer.getID());
+        assertEquals(this.id, buyer.getId());
         assertEquals(this.globalID, buyer.getGlobalID());
         assertEquals(this.name, buyer.getName());
         assertEquals(this.taxRegistrationID, buyer.getTaxRegistrationID());
