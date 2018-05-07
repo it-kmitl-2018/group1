@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class BuyerTest {
 
-    private final String ID = "ABCDEFGHIJKLMNOPQRST123456789012345";
+    private final String id = "ABCDEFGHIJKLMNOPQRST123456789012345";
     private final String globalID = "ABCDEFGHIJKLMNOPQRST123456789012345";
     private final String name = "ธำรำ ยืนข ำ";
     private final String taxRegistrationID = "1104599001271";
@@ -16,14 +16,14 @@ public class BuyerTest {
     @Test
     public void checkInputCorrectData(){
         Buyer buyer = Buyer.builder()
-                .ID(this.ID)
+                .ID(this.id)
                 .globalID(this.globalID)
                 .name(this.name)
                 .taxRegistrationID(this.taxRegistrationID)
                 .contact(this.contact)
                 .address(this.address)
                 .build();
-        assertEquals(this.ID, buyer.getID());
+        assertEquals(this.id, buyer.getID());
         assertEquals(this.globalID, buyer.getGlobalID());
         assertEquals(this.name, buyer.getName());
         assertEquals(this.taxRegistrationID, buyer.getTaxRegistrationID());

@@ -6,7 +6,7 @@ import lombok.Data;
 @Builder
 public @Data class Buyer {
 
-    private String ID;
+    private String id;
     private String globalID;
     private String name;
     private String taxRegistrationID;
