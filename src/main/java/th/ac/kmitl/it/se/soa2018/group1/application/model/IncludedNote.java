@@ -1,4 +1,4 @@
-package th.ac.kmitl.it.se.soa2018.group1.application.model;
+package th.ac.kmitl.it.se.soa2018.group1.application;
 
 public class IncludedNote {
 
