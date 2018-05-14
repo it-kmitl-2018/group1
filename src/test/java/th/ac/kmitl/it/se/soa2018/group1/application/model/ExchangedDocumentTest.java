@@ -20,16 +20,17 @@ public class ExchangedDocumentTest {
 
     @Test
     public void checkInputCorrectData() {
-        ExchangedDocument exchangedDocument = new ExchangedDocument();
-        exchangedDocument.setId(this.ID);
-        exchangedDocument.setName(this.NAME);
-        exchangedDocument.setTypeCode(this.TYPE_CODE);
-        exchangedDocument.setIssueDateTime(this.ISSUE_DATE_TIME);
-        exchangedDocument.setPurpose(this.PURPOSE);
-        exchangedDocument.setPurposeCode(this.PURPOSE_CODE);
-        exchangedDocument.setGlobalId(this.GLOBAL_ID);
-        exchangedDocument.setCreationDateTime(this.CREATION_DATE_TIME);
-        exchangedDocument.setIncludedNote(this.INCLUDED_NOTE);
+        ExchangedDocument exchangedDocument = ExchangedDocument.builder()
+                .id(this.ID)
+                .name(this.NAME)
+                .typeCode(this.TYPE_CODE)
+                .issueDateTime(this.ISSUE_DATE_TIME)
+                .purpose(this.PURPOSE)
+                .purposeCode(this.PURPOSE_CODE)
+                .globalId(this.GLOBAL_ID)
+                .creationDateTime(this.CREATION_DATE_TIME)
+                .includedNote(this.INCLUDED_NOTE)
+                .build();
 
         assertEquals(this.ID, exchangedDocument.getId());
         assertEquals(this.NAME, exchangedDocument.getName());
