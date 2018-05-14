@@ -11,11 +11,11 @@ public @Data class AddressForm {
     private String soi;
     private String village;
     private String moo;
-    private String streetName;
-    private String cityName;
-    private String citySubDivisionName;
+    private String street;
+    private String city;
+    private String district;
     private String countryId;
-    private String countrySubDivisionId;
+    private String cityId;
     private String buildingNumber;
 
 }

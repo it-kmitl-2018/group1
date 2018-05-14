@@ -10,11 +10,11 @@ public class AddressFormTest {
     private final String soi = "ประชาอุทิศ17";
     private final String village = "-";
     private final String moo = "-";
-    private final String streetName = "ประชาอุทิศ";
-    private final String cityName = "กรุงเทพมหานคร";
-    private final String citySubDivisionName = "ราษฎร์บูรณะ";
+    private final String street = "ประชาอุทิศ";
+    private final String city = "กรุงเทพมหานคร";
+    private final String district = "ราษฎร์บูรณะ";
     private final String countryId = "TH";
-    private final String countrySubDivisionId = "2";
+    private final String cityId = "2";
     private final String buildingNumber = "440/23";
 
     @Test
@@ -26,11 +26,11 @@ public class AddressFormTest {
                 .soi(this.soi)
                 .village(this.village)
                 .moo(this.moo)
-                .streetName(this.streetName)
-                .cityName(this.cityName)
-                .citySubDivisionName(this.citySubDivisionName)
+                .street(this.street)
+                .city(this.city)
+                .district(this.district)
                 .countryId(this.countryId)
-                .countrySubDivisionId(this.countrySubDivisionId)
+                .cityId(this.cityId)
                 .buildingNumber(this.buildingNumber)
                 .build();
 
@@ -39,11 +39,11 @@ public class AddressFormTest {
         assertEquals(this.soi, addressForm.getSoi());
         assertEquals(this.village, addressForm.getVillage());
         assertEquals(this.moo, addressForm.getMoo());
-        assertEquals(this.streetName, addressForm.getStreetName());
-        assertEquals(this.cityName, addressForm.getCityName());
-        assertEquals(this.citySubDivisionName, addressForm.getCitySubDivisionName());
+        assertEquals(this.street, addressForm.getStreet());
+        assertEquals(this.city, addressForm.getCity());
+        assertEquals(this.district, addressForm.getDistrict());
         assertEquals(this.countryId, addressForm.getCountryId());
-        assertEquals(this.countrySubDivisionId, addressForm.getCountrySubDivisionId());
+        assertEquals(this.cityId, addressForm.getCityId());
         assertEquals(this.buildingNumber, addressForm.getBuildingNumber());
 
     }
