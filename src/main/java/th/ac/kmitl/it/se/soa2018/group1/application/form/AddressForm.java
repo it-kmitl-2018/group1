@@ -15,7 +15,6 @@ public @Data class AddressForm {
     private String city;
     private String district;
     private String countryId;
-    private String cityId;
     private String buildingNumber;
 
 }

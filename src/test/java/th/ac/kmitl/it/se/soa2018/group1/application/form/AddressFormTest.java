@@ -14,7 +14,6 @@ public class AddressFormTest {
     private final String city = "กรุงเทพมหานคร";
     private final String district = "ราษฎร์บูรณะ";
     private final String countryId = "TH";
-    private final String cityId = "2";
     private final String buildingNumber = "440/23";
 
     @Test
@@ -30,7 +29,6 @@ public class AddressFormTest {
                 .city(this.city)
                 .district(this.district)
                 .countryId(this.countryId)
-                .cityId(this.cityId)
                 .buildingNumber(this.buildingNumber)
                 .build();
 
@@ -43,7 +41,6 @@ public class AddressFormTest {
         assertEquals(this.city, addressForm.getCity());
         assertEquals(this.district, addressForm.getDistrict());
         assertEquals(this.countryId, addressForm.getCountryId());
-        assertEquals(this.cityId, addressForm.getCityId());
         assertEquals(this.buildingNumber, addressForm.getBuildingNumber());
 
     }
