@@ -3,7 +3,7 @@ package th.ac.kmitl.it.se.soa2018.group1.application.json;
 import org.junit.Test;
 import  static  org.junit.Assert.assertEquals;
 
-public class JsonAddressTest {
+public class AddressJsonTest {
 
     private String lineOne = "สำนักงานใหญ่ เลขที่ 313/1";
     private String lineTwo = "ถนนรัชดาภิเษก แขวงบุคลโล เขตธนบุรี กรุงเทพมหานคร 10600";
@@ -15,7 +15,7 @@ public class JsonAddressTest {
 
     @Test
     public void shouldGetAllInfo() {
-        JsonAddress jsonAddress = JsonAddress.builder()
+        AddressJson addressJson = AddressJson.builder()
                 .lineOne(this.lineOne)
                 .lineTwo(this.lineTwo)
                 .cityName(this.cityName)
@@ -25,12 +25,12 @@ public class JsonAddressTest {
                 .countryName(this.countryName)
                 .build();
 
-        assertEquals(this.lineOne , jsonAddress.lineOne);
-        assertEquals(this.lineTwo , jsonAddress.lineTwo);
-        assertEquals(this.cityName , jsonAddress.cityName);
-        assertEquals(this.citySubDivisionName , jsonAddress.citySubDivisionName);
-        assertEquals(this.postCode , jsonAddress.postCode);
-        assertEquals(this.countrySubDivision , jsonAddress.countrySubDivision);
-        assertEquals(this.countryName , jsonAddress.countryName);
+        assertEquals(this.lineOne , addressJson.lineOne);
+        assertEquals(this.lineTwo , addressJson.lineTwo);
+        assertEquals(this.cityName , addressJson.cityName);
+        assertEquals(this.citySubDivisionName , addressJson.citySubDivisionName);
+        assertEquals(this.postCode , addressJson.postCode);
+        assertEquals(this.countrySubDivision , addressJson.countrySubDivision);
+        assertEquals(this.countryName , addressJson.countryName);
     }
 }

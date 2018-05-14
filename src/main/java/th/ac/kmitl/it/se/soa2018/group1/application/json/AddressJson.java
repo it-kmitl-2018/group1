@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 
 @Builder
-public class JsonAddress {
+public class AddressJson {
 
     @JsonProperty("line_one")
     public String lineOne;
