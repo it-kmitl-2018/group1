@@ -1,10 +1,9 @@
 package th.ac.kmitl.it.se.soa2018.group1.application.json;
 
 import org.junit.Test;
-
 import  static  org.junit.Assert.assertEquals;
 
-class JsonAddressTest {
+public class JsonAddressTest {
 
     private String lineOne = "สำนักงานใหญ่ เลขที่ 313/1";
     private String lineTwo = "ถนนรัชดาภิเษก แขวงบุคลโล เขตธนบุรี กรุงเทพมหานคร 10600";
