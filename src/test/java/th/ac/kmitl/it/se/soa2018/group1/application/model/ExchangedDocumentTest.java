@@ -16,7 +16,7 @@ public class ExchangedDocumentTest {
     private final String PURPOSE_CODE = "DCNS03";
     private final String GLOBAL_ID = "2.16.764.1.1.2.1.X.X.X";
     private final Timestamp CREATION_DATE_TIME = new Timestamp(System.currentTimeMillis());
-    private final IncludedNote INCLUDED_NOTE = new IncludedNote();
+    private final IncludedNote INCLUDED_NOTE = IncludedNote.builder().build();
 
     @Test
     public void checkInputCorrectData() {

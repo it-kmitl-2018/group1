@@ -8,10 +8,9 @@ public class IncludedNoteTest {
 
     private final String SUBJECT = "หมายเหตุ";
     private final String CONTENT = "กรณีเสนอขายใบสำคัญแสดงสิทธิอนุพันธ์ ให้รายงานผลการขายภายใน 45 วันนับแต่วันปิดขาย";
-
     @Test
     public void checkInputCorrectData() {
-        IncludedNote includedNote = new IncludedNote();
+        IncludedNote includedNote = IncludedNote.builder().build();
         includedNote.setSubject(this.SUBJECT);
         includedNote.setContent(this.CONTENT);
 
